@@ -44,7 +44,7 @@ public class Ilc {
                     eliminaReferencia( coleccion );
                     break;
                 case 4:
-                    visualiza( coleccion );
+                    coleccion.visualiza();
                     break;
                 default:
                     System.out.println( "No es correcta esa opción ( " 

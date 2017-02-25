@@ -71,4 +71,19 @@ public class Bibliografia {
     public void elimina(int pos)
     {
     }
+
+    
+    public void visualiza() {
+        
+        if ( numReferencias > 0 ) {
+            for (int i = 0; i < numReferencias; i++) {
+                System.out.print( ( i + 1 ) + ". " );
+                System.out.println( referencias[i]);
+            }
+        } else {
+            System.out.println( "No hay referencias." );
+        }
+        
+    }
+    
 }
