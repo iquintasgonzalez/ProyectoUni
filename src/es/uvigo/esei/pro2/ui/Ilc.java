@@ -108,7 +108,7 @@ public class Ilc {
      */
     private void insertaReferencia(Bibliografia coleccion)
     {
-        Referencia r = new Referencia( "", "", 0 );
+        Referencia r = new Referencia( "", "", 0,Referencia.TipoReferencia.LIBRO );
 
         modificaReferencia( r );
         coleccion.inserta( r );
@@ -201,11 +201,11 @@ public class Ilc {
         } while((tipoReferencia != 'L') && (tipoReferencia != 'A') && (tipoReferencia != 'D'));
         
         switch (tipoReferencia){
-            case 'L': r.setEtiquetaLibro(true);
+            case 'L': r.setTipo(Referencia.TipoReferencia.LIBRO);
                       break;
-            case 'A': r.setEtiquetaArticuloRevista(true);
+            case 'A': r.setTipo(Referencia.TipoReferencia.ARTICULOREVISTA);
                       break;
-            case 'D': r.setEtiquetaDocumentoWeb(true);
+            case 'D': r.setTipo(Referencia.TipoReferencia.DOCUMENTOWEB);
                       break;                
         }
 
