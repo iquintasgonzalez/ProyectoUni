@@ -70,6 +70,8 @@ public class Bibliografia {
 
     public void elimina(int pos)
     {
+        referencias[pos]=referencias[numReferencias];
+        numReferencias --;
     }
 
     
