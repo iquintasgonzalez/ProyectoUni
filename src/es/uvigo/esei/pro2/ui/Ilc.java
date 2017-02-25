@@ -26,6 +26,7 @@ public class Ilc {
         // Bucle ppal
         do {
             System.out.println( "\nGestión bibliográfica" );
+            System.out.println("\nNumero de referencia:"+coleccion.getNumReferencias()+" Numero maximo:"+coleccion.getMaxReferencias());
 
             op = menu();
 
